@@ -1,0 +1,12 @@
+package com.Day2;
+
+public class WelcomeJohn {
+    public static void main(String[] args) {
+        if (args.length != 1) {
+            System.out.println("Error: Please provide exactly one argument!");
+            System.out.println("Example: java com.Day2.Sample John");
+            return; 
+        }
+        System.out.println("Welcome " + args[0]);
+    }
+}

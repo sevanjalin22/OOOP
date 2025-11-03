@@ -1,0 +1,17 @@
+package com.Day2;
+
+public class CompanyLocation {
+    public static void main(String[] args) {
+        if (args.length != 2) {
+            System.out.println("Error: Please pass exactly two arguments!");
+            System.out.println("Example: java com.Day2.CompanyLocation Wipro Bangalore");
+            return;
+        }
+
+        String company = args[0];
+        String city = args[1];
+
+        // Print the formatted output
+        System.out.println(company + " Technologies " + city);
+    }
+}

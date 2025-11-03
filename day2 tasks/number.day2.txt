@@ -1,0 +1,19 @@
+package com.Day2;
+public class CheckNumber {
+    public static void main(String[] args) {
+        if (args.length != 1) {
+            System.out.println("Error: Please provide exactly one number as argument!");
+            System.out.println("Example: java com.Day2.CheckNumber 5");
+            return;
+        }
+        int num = Integer.parseInt(args[0]);
+        if (num > 0) {
+            System.out.println("The number is Positive");
+        } else if (num < 0) {
+            System.out.println("The number is Negative");
+        } else {
+            System.out.println("The number is Zero");
+        }
+    }
+}
+

@@ -1,0 +1,16 @@
+package com.Day2;
+public class EvenOdd {
+    public static void main(String[] args) {
+        if (args.length != 1) {
+            System.out.println("Error: Please provide exactly one number as argument!");
+            System.out.println("Example: java com.Day2.OddEven 4");
+            return;
+        }
+        int num = Integer.parseInt(args[0]);
+        if (num % 2 == 0) {
+            System.out.println("The number is Even");
+        } else {
+            System.out.println("The number is Odd");
+        }
+    }
+}
