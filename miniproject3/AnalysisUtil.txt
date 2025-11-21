@@ -1,0 +1,10 @@
+public class AnalysisUtil {
+
+    // Measures execution time of any Runnable task
+    public static void measureTime(Runnable task) {
+        long start = System.currentTimeMillis();
+        task.run();
+        long end = System.currentTimeMillis();
+        System.out.println("Execution time: " + (end - start) + " ms");
+    }
+}

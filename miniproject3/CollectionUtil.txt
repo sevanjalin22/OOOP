@@ -1,0 +1,20 @@
+import java.util.LinkedList;
+
+public class CollectionUtil<T> {
+
+    private LinkedList<T> list = new LinkedList<>();
+
+    // ---------- STACK ----------
+    public void push(T item) { list.addFirst(item); }
+    public T pop() { return list.removeFirst(); }
+
+    // ---------- QUEUE ----------
+    public void enqueue(T item) { list.addLast(item); }
+    public T dequeue() { return list.removeFirst(); }
+
+    public boolean isEmpty() { return list.isEmpty(); }
+
+    @Override
+    public String toString() { return list.toString(); }
+}
+
